@@ -1,0 +1,7 @@
+*~
+*#
+*.log
+*.raw
+*.plt
+.ipynb_checkpoints/*
+*.net

@@ -1,0 +1,23 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -64 -56 80 56
+WINDOW 0 8 -56 Bottom 2
+WINDOW 3 8 56 Top 2
+SYMATTR Value AD848J
+SYMATTR Prefix X
+SYMATTR ModelFile /Users/shawn/Documents/GitHub/tdmspice/opamps/ad848j/ad848j.cir
+PIN -64 0 LEFT 8
+PINATTR PinName +IN
+PINATTR SpiceOrder 1
+PIN -64 -32 LEFT 8
+PINATTR PinName -IN
+PINATTR SpiceOrder 2
+PIN -64 32 LEFT 8
+PINATTR PinName +VCC
+PINATTR SpiceOrder 3
+PIN 80 32 RIGHT 8
+PINATTR PinName -VCC
+PINATTR SpiceOrder 4
+PIN 80 -32 RIGHT 8
+PINATTR PinName OUT
+PINATTR SpiceOrder 5

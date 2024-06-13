@@ -1,0 +1,1 @@
+https://www.analog.com/en/technical-articles/ltspice-simulating-sar-adc-analog-inputs.html

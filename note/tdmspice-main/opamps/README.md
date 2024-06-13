@@ -1,0 +1,1 @@
+https://www.analog.com/en/technical-articles/ltspice-simple-steps-to-import-third-party-models.html
