@@ -1,0 +1,16 @@
+What I have done
+
+~1 week: recodeing cable effects
+
+1~2 week: temperature sensor
+    including try animation work
+        Temperx232
+        control from connect servies(raspberry pi)
+
+2~3 week: Waffer Mapping
+    data analysis
+    data visualization
+
+(07/02-now) SQUIDs:
+    data type
+    paper reading      
