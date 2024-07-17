@@ -1,0 +1,56 @@
+(dp0
+Vtarget
+p1
+VIceCrate('014').Dfmux(slot=10).MGMEZZ04(2,'242').SQUIDController(None).SQUIDModule(3).SQUID
+p2
+sVreduced_target
+p3
+VIceCrate(014).IceBoard(10).Mezz(2).SQCB.SQUIDModule(3).SQUID
+p4
+sVtitle
+p5
+VSquid Tuning for IceCrate('014').Dfmux(slot=10).MGMEZZ04(2,'242').SQUIDController(None).SQUIDModule(3).SQUID
+p6
+sVsquid_id
+p7
+VCorrect.7
+p8
+sVsquid_pstring
+p9
+V014/10/2/3
+p10
+sVhwm_dir
+p11
+V/home/polarbear/hardware_maps/polarbear/PB2b/commissioning/202305_crate_test/crate_hwm_202310_shift_disable_bad_sq_v2.yaml
+p12
+sVhwm_name
+p13
+VPB2 HWM
+p14
+sVoutcome
+p15
+Vfailure
+p16
+sVfailure_reason
+p17
+cpydfmux.core.tuber
+TuberRemoteError
+p18
+(VThe temperature reading was invalid - is the squid controller plugged in?
+p19
+tp20
+Rp21
+sVstack_trace
+p22
+VNoneType: None\u000a
+p23
+sVchosen_parameters
+p24
+(dp25
+Vflux_bias
+p26
+NsVcurrent_bias
+p27
+NsVpeak2peak
+p28
+Nss.

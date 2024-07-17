@@ -1,0 +1,70 @@
+2024-06-21 07:04:02 UTC | DEBUG | tune_squid | dfmux_logging.py | setup_child_loggers | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | Logging Adaptor is now active
+2024-06-21 07:04:03 UTC | INFO | tune_squid | tune_squid.py | tune_squid_inner | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | STARTING Algorithm
+2024-06-21 07:04:03 UTC | DEBUG | tune_squid | tune_squid.py | tune_squid_inner | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | tune_squid algorithm running with: {'do_process_output': True, 'bias_on_pos_slope': False, 'phase_shifting_squid': True, 'integration': 1000, 'ignore_hwm_bias_properties': False, 'force_bias_at_reference': False, 'exit_on_peak_bias': False, 'minap2p': 0.005, 'frac_Vppmax_at_bias': 0.9, 'squid_bias_increment': 0.05, 'squid_bias_stop': 1.0, 'squid_bias_start': 0.6, 'squid_bias_reference': (1.2, 1.4, 1.6), 'flux_increment': 0.05, 'flux_stop': 2.0, 'flux_start': 0.0, 'squid': IceCrate('017').Dfmux(slot=5).MGMEZZ04(2,'284').SQUIDController(None).SQUIDModule(3).SQUID}
+2024-06-21 07:04:03 UTC | DEBUG | tune_squid | offset_zero.py | __init__ | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | STARTING Sub-Algorithm
+2024-06-21 07:04:03 UTC | INFO | tune_squid | zero_combs.py | zero_combs | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | Zeroing combs on 1 module(s)
+2024-06-21 07:04:03 UTC | INFO | tune_squid | zero_combs.py | zero_combs_inner | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | Zeroing Combs on IceCrate('017').Dfmux(slot=5).MGMEZZ04(2,'284').ReadoutModule(3)
+2024-06-21 07:04:03 UTC | DEBUG | tune_squid | zero_combs.py | zero_combs_inner | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | Zeroing carrier on: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64]
+2024-06-21 07:04:03 UTC | INFO | tune_squid | zero_combs.py | zero_combs_inner | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | Zeroing carrier and disabling DAN and zeroing amplitudes and frequencies on 64 channels
+2024-06-21 07:04:03 UTC | DEBUG | tune_squid | zero_combs.py | zero_combs_inner | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | zero combs running on on: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64]
+2024-06-21 07:04:58 UTC | ERROR | tune_squid | tune_squid.py | tune_squid_inner | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | Error reinitializing squid board after tuning failure
+Traceback (most recent call last):
+  File "/home/polarbear/pydfmux/algorithms/squid/tune_squid.py", line 933, in tune_squid_inner
+    pick_mods=[squid.module.module]
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/gen.py", line 1055, in run
+    value = future.result()
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 4, in raise_exc_info
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/gen.py", line 1063, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/types.py", line 184, in throw
+    return self.__wrapped.throw(tp, *rest)
+  File "/home/polarbear/pydfmux/algorithms/initialization/initialize_hardware.py", line 137, in initialize_squidcontroller
+    temp = yield pydfmux.asynchronously(sqcb.get_squid_controller_temperature)
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/gen.py", line 1055, in run
+    value = future.result()
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 4, in raise_exc_info
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/gen.py", line 1063, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/polarbear/pydfmux/core/tuber.py", line 480, in __call_async__
+    result = yield asynchronous.asynchronously(m, *args, **kwargs)
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/gen.py", line 1055, in run
+    value = future.result()
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 4, in raise_exc_info
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/gen.py", line 1063, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/polarbear/pydfmux/core/tuber.py", line 778, in __call_async__
+    yield asynchronous.asynchronously(ctx)
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/gen.py", line 1055, in run
+    value = future.result()
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 4, in raise_exc_info
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/gen.py", line 1063, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/home/polarbear/pydfmux/core/tuber.py", line 352, in __call_async__
+    raise tornado.gen.Return((yield futures))
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/gen.py", line 1055, in run
+    value = future.result()
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 4, in raise_exc_info
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/gen.py", line 828, in callback
+    result_list.append(f.result())
+  File "/home/polarbear/clustertools/py3-v2/LinuxMint_17.2_x86_64/lib/python3.6/site-packages/tornado/concurrent.py", line 238, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 4, in raise_exc_info
+pydfmux.core.tuber.TuberRemoteError: The temperature reading was invalid - is the squid controller plugged in?
+2024-06-21 07:04:58 UTC | ERROR | tune_squid | tune_squid.py | tune_squid_inner | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | Caught the following exception in SQUID tuning algorithm: 
+The temperature reading was invalid - is the squid controller plugged in?
+Stack Trace follows
+NoneType: None
+2024-06-21 07:04:58 UTC | DEBUG | tune_squid | save_returns.py | pickle_handler | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | Pickling output data to /home/polarbear/pydfmux_outputs/polarbear/20240621/20240621_070402_tune_squid/data/IceCrate_017.IceBoard_5.Mezz_2.SQCB.SQUIDModule_3.SQUID_DFMUXError_data_dump.pkl
+2024-06-21 07:04:58 UTC | DEBUG | tune_squid | tune_squid.py | process_output | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | Generating reStructuredText document at /home/polarbear/pydfmux_outputs/polarbear/20240621/20240621_070402_tune_squid/rst_docs/IceCrate_017.IceBoard_5.Mezz_2.SQCB.SQUIDModule_3.SQUID.rst
+2024-06-21 07:04:58 UTC | ERROR | tune_squid | tune_squid.py | plot_helper | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | There doesn't seem to be any information about the current bias optimization. This may be because force_bias_at_reference has been selected. Skipping
+2024-06-21 07:04:58 UTC | ERROR | tune_squid | tune_squid.py | plot_helper | IceCrate(017).IceBoard(5).Mezz(2).SQCB.SQUIDModule(3).SQUID | There doesn't seem to be any information about the flux bias optimization. Skipping
